@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%= require('html-loader!./html/_header.html')%>
+    <div class="container">
+        <h1 id="h1">Hello, my webpack!</h1>
+        <p>
+            test 124
+        </p>
+        <div class="box" style="background: url(assets/img/php1.png) center no-repeat; background-size: contain;">
+            <!-- <img src="assets/img/php1.png" alt=""> -->
+        </div>
+        <div id="root"></div>
+    </div>
+    <%= require('html-loader!./html/_footer.html')%>
+</body>
+</html>
